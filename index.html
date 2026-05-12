@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBDev Template Store - 3D Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🎨</span>
+            <span class="logo-text">WEBDev Store</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+    </nav>
+
+    <!-- Hero Section with 3D Elements -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Web Templates & Components</h1>
+            <p class="hero-subtitle">Explore our collection of stunning 3D interactive templates</p>
+            <button class="cta-btn">Browse Collection</button>
+        </div>
+        <div class="hero-3d">
+            <div class="floating-cube">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates-section">
+        <h2 class="section-title">Featured Templates</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" data-filter="blog">Blog</button>
+        </div>
+        
+        <div class="templates-grid">
+            <!-- Template 1 -->
+            <div class="template-card" data-category="business">
+                <div class="card-3d">
+                    <div class="card-preview business-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Corporate Pro</h3>
+                        <p>Professional business template with modern design</p>
+                        <div class="card-meta">
+                            <span class="price">$49</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 2 -->
+            <div class="template-card" data-category="portfolio">
+                <div class="card-3d">
+                    <div class="card-preview portfolio-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Creative Portfolio</h3>
+                        <p>Showcase your work with style</p>
+                        <div class="card-meta">
+                            <span class="price">$39</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 3 -->
+            <div class="template-card" data-category="ecommerce">
+                <div class="card-3d">
+                    <div class="card-preview ecommerce-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Shop Master</h3>
+                        <p>Complete e-commerce solution</p>
+                        <div class="card-meta">
+                            <span class="price">$79</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 4 -->
+            <div class="template-card" data-category="blog">
+                <div class="card-3d">
+                    <div class="card-preview blog-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Blog Elite</h3>
+                        <p>Perfect for content creators</p>
+                        <div class="card-meta">
+                            <span class="price">$29</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 5 -->
+            <div class="template-card" data-category="business">
+                <div class="card-3d">
+                    <div class="card-preview startup-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Startup Launch</h3>
+                        <p>Launch your startup with impact</p>
+                        <div class="card-meta">
+                            <span class="price">$59</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 6 -->
+            <div class="template-card" data-category="portfolio">
+                <div class="card-3d">
+                    <div class="card-preview photographer-preview">
+                        <div class="preview-overlay">
+                            <button class="preview-btn">Preview</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Photographer's Dream</h3>
+                        <p>Beautiful gallery for photographers</p>
+                        <div class="card-meta">
+                            <span class="price">$45</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components-section">
+        <h2 class="section-title">UI Components</h2>
+        <p class="section-subtitle">Ready-to-use components to enhance your projects</p>
+        
+        <div class="components-showcase">
+            <div class="component-category">
+                <h3>Navigation Components</h3>
+                <div class="components-grid">
+                    <div class="component-item">
+                        <div class="component-preview nav-preview-1"></div>
+                        <h4>Sidebar Menu</h4>
+                        <span class="component-price">$12</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview nav-preview-2"></div>
+                        <h4>Mega Menu</h4>
+                        <span class="component-price">$15</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview nav-preview-3"></div>
+                        <h4>Mobile Nav</h4>
+                        <span class="component-price">$10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-category">
+                <h3>Form Components</h3>
+                <div class="components-grid">
+                    <div class="component-item">
+                        <div class="component-preview form-preview-1"></div>
+                        <h4>Contact Form</h4>
+                        <span class="component-price">$8</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview form-preview-2"></div>
+                        <h4>Login Modal</h4>
+                        <span class="component-price">$10</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview form-preview-3"></div>
+                        <h4>Search Bar</h4>
+                        <span class="component-price">$6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-category">
+                <h3>Card Components</h3>
+                <div class="components-grid">
+                    <div class="component-item">
+                        <div class="component-preview card-preview-1"></div>
+                        <h4>Product Card</h4>
+                        <span class="component-price">$9</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview card-preview-2"></div>
+                        <h4>Pricing Card</h4>
+                        <span class="component-price">$11</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview card-preview-3"></div>
+                        <h4>Feature Card</h4>
+                        <span class="component-price">$8</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-category">
+                <h3>Animation Components</h3>
+                <div class="components-grid">
+                    <div class="component-item">
+                        <div class="component-preview anim-preview-1"></div>
+                        <h4>Loading Spinner</h4>
+                        <span class="component-price">$7</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview anim-preview-2"></div>
+                        <h4>Scroll Effects</h4>
+                        <span class="component-price">$14</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="component-preview anim-preview-3"></div>
+                        <h4>Hover Effects</h4>
+                        <span class="component-price">$10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <p>support@webdevstore.com</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📱</span>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <p>123 Web Street, Digital City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WEBDev Store</h4>
+                <p>Premium templates and components for modern web development</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#components">Components</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 WEBDev Template Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <button class="close-cart">&times;</button>
+            <h3>Your Cart</h3>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="preview-modal">
+        <button class="close-preview">&times;</button>
+        <div class="preview-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
